@@ -24,7 +24,7 @@
 
 ## Description
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+Install Docker on your machine to run the code.
 
 ## Installation
 
@@ -35,24 +35,19 @@ $ npm install
 ## Running the app
 
 ```bash
-# development
+# docker compose
 $ docker compose up -d db
 $ docker compose build
 $ docker compose up
 
-# watch mode
-$ npm run start:dev
-
-# production mode
-$ npm run start:prod
 ```
 
 ## APIs
 
-- get all Salaries - [Kamil Myśliwiec](http://0.0.0.0:3000/salaries)
-- Salaries stats - [Kamil Myśliwiec](http://0.0.0.0:3000/salaries/statistics)
-- get Salaries id - [Kamil Myśliwiec](http://0.0.0.0:3000/salaries/:id)
-- delete Salaries id - [Kamil Myśliwiec](http://0.0.0.0:3000/salaries/:id)
-- post Salaries - [Kamil Myśliwiec](http://0.0.0.0:3000/salaries)
-- put Salaries - [Kamil Myśliwiec](http://0.0.0.0:3000/salaries/:id)
+- get all Salaries - [getAllSalaries](http://0.0.0.0:3000/salaries)
+- Salaries stats - [getSalaryStats](http://0.0.0.0:3000/salaries/statistics)
+- get Salaries id - [getSalaryId](http://0.0.0.0:3000/salaries/:id)
+- delete Salaries id - [deleteSalary](http://0.0.0.0:3000/salaries/:id)
+- post Salaries - [createSalary](http://0.0.0.0:3000/salaries)
+- put Salaries - [updateSalary](http://0.0.0.0:3000/salaries/:id)
 
